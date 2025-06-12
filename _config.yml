@@ -1,0 +1,37 @@
+# _config.yml
+# إعدادات عامة لموقعك على Jekyll
+
+title: بوابة الألعاب | مراجعات وتقييمات
+email: your-email@example.com # استبدل ببريدك الإلكتروني
+description: "موقعك الأول لمراجعات الألعاب والأخبار الحصرية. شغفنا هو الألعاب، وهدفنا هو تقديم محتوى صادق وموثوق."
+baseurl: "" # اتركها فارغة إذا كان موقعك سيكون على yourusername.github.io/، أو ضع اسم المستودع (مثال: "/my-gaming-reviews") إذا كان على yourusername.github.io/my-gaming-reviews/
+url: "http://yourwebsite.com" # استبدل بعنوان URL لموقعك الفعلي (مثال: "https://yourusername.github.io")
+
+# إعدادات البناء
+markdown: kramdown
+theme: minima # يمكنك إزالة هذا السطر إذا كنت ستستخدم تصميمك بالكامل وتلغي تفعيل السمة الافتراضية
+
+# متغيرات Disqus (مهمة للتعليقات)
+# استبدل YOUR_DISQUS_SHORTNAME باسمك المختصر من Disqus الذي تحصل عليه من Disqus.com
+disqus_shortname: disqus_lVwCawOW5s
+
+# مجلدات الاستثناء (لا يتم معالجتها بواسطة Jekyll، للحفاظ على المشروع نظيفاً)
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# إعدادات المدونة (posts)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "review" # تحديد التخطيط الافتراضي لجميع المراجعات في مجلد _posts

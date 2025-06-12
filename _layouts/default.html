@@ -1,0 +1,20 @@
+<!-- _layouts/default.html -->
+<!-- التخطيط الافتراضي الذي سيتم تضمين أجزاء الموقع الرئيسية فيه -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    {% include head.html %} {# يتم تضمين محتويات ملف _includes/head.html هنا #}
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    {% include navbar.html %} {# يتم تضمين محتويات ملف _includes/navbar.html هنا #}
+
+    <main>
+        {{ content }} {# هنا سيتم حقن المحتوى الخاص بكل صفحة (مثل الرئيسية أو المراجعة الفردية) #}
+    </main>
+
+    {% include footer.html %} {# يتم تضمين محتويات ملف _includes/footer.html هنا #}
+    {% include scripts.html %} {# يتم تضمين محتويات ملف _includes/scripts.html هنا #}
+
+</body>
+</html>
