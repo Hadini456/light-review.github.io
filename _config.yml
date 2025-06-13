@@ -4,8 +4,8 @@
 title: بوابة الألعاب | مراجعات وتقييمات
 email: your-email@example.com # استبدل ببريدك الإلكتروني
 description: "موقعك الأول لمراجعات الألعاب والأخبار الحصرية. شغفنا هو الألعاب، وهدفنا هو تقديم محتوى صادق وموثوق."
-baseurl: "" # اتركها فارغة إذا كان موقعك سيكون على yourusername.github.io/، أو ضع اسم المستودع (مثال: "/my-gaming-reviews") إذا كان على yourusername.github.io/my-gaming-reviews/
-url: "http://yourwebsite.com" # استبدل بعنوان URL لموقعك الفعلي (مثال: "https://yourusername.github.io")
+baseurl: "/light-review" # اتركها فارغة إذا كان موقعك سيكون على yourusername.github.io/، أو ضع اسم المستودع (مثال: "/my-gaming-reviews") إذا كان على yourusername.github.io/my-gaming-reviews/
+url: "https://hadim456.github.io" # استبدل بعنوان URL لموقعك الفعلي (مثال: "https://yourusername.github.io")
 
 # إعدادات البناء
 markdown: kramdown
