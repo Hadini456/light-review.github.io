@@ -1,35 +1,32 @@
-<!-- _includes/head.html -->
-<!-- الجزء الخاص بـ <head> الذي سيتكرر في كل الصفحات -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- عنوان الصفحة سيأتي ديناميكياً من Jekyll (من Front Matter الصفحة، أو عنوان الموقع الافتراضي) -->
+
 <title>{{ page.title | default: site.title }}</title>
 
-<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Google Fonts: Cairo -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 
-<!-- Font Awesome for Icons -->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-    /* تطبيق الخط المخصص على الموقع بالكامل */
+  
     body {
         font-family: 'Cairo', sans-serif;
         scroll-behavior: smooth;
     }
-    /* تأثير التدرج على صور الأبطال */
+   
     .hero-gradient {
         background-image: linear-gradient(to top, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.6) 50%, rgba(17, 24, 39, 0) 100%);
     }
     .card-gradient {
         background-image: linear-gradient(to top, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0) 50%);
     }
-    /* تأثيرات الإضاءة الحمراء */
+  
     .red-glow {
         box-shadow: 0 0 15px rgba(220, 38, 38, 0.5), 0 0 5px rgba(220, 38, 38, 0.7);
     }

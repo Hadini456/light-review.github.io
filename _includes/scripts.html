@@ -1,7 +1,6 @@
-<!-- _includes/scripts.html -->
-<!-- سكربتات JavaScript العامة للموقع -->
+
 <script>
-    // JavaScript for Mobile Menu
+
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
@@ -11,7 +10,7 @@
         });
     }
 
-    // Close mobile menu when a link is clicked
+   
     const mobileMenuLinks = mobileMenu ? mobileMenu.getElementsByTagName('a') : [];
     for (let link of mobileMenuLinks) {
         link.addEventListener('click', () => {
@@ -19,7 +18,7 @@
         });
     }
     
-    // Change navbar style on scroll
+   
     const navbar = document.getElementById('navbar');
     if (navbar) {
         window.addEventListener('scroll', () => {

@@ -1,28 +1,20 @@
----
-layout: default # هذا يخبر Jekyll أن هذا التخطيط يرث من default.html (أي سيحتوي على الهيدر والفوتر والسكريبتات)
----
-<!-- _layouts/review.html -->
-<!-- تخطيط خاص لصفحات المراجعات التفصيلية -->
 
 <section id="detailed-review" class="relative py-20 bg-gray-900 overflow-hidden">
-    <!-- خلفية خفيفة شفافة للمراجعة -->
+
     <div class="absolute inset-0 bg-cover bg-center opacity-10 blur-sm" style="background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Gaming+Background');"></div>
     
     <div class="container mx-auto px-6 relative z-10">
-        <!-- عنوان المراجعة يأتي من Front Matter لملف Markdown -->
+
         <h2 class="text-4xl font-black text-center mb-12 text-white red-text-glow">مراجعة <span class="text-red-600">{{ page.game_title }}</span></h2>
 
-        <!-- صندوق المراجعة الشفاف -->
         <div class="max-w-4xl mx-auto bg-gray-800 bg-opacity-80 rounded-2xl p-8 lg:p-12 shadow-2xl red-glow transition-all duration-500 hover:bg-opacity-90">
-            <!-- صورة المراجعة تأتي من Front Matter لملف Markdown -->
+ 
             <img src="{{ page.image }}" alt="{{ page.title }}" class="w-full rounded-xl mb-8 shadow-lg">
 
-            <!-- المحتوى الفعلي للمراجعة (الفقرات والعناوين الداخلية) يأتي من ملف Markdown الخاص بالمراجعة -->
-            {{ content }} 
 
             <div class="flex items-center justify-between mt-8 pt-6 border-t border-gray-700">
                 <div class="text-yellow-400 text-3xl">
-                    <!-- التقييم يأتي من Front Matter لملف Markdown -->
+                 
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -35,23 +27,20 @@ layout: default # هذا يخبر Jekyll أن هذا التخطيط يرث من 
                 </a>
             </div>
 
-            <!-- Disqus Comments Section -->
+
             <div class="mt-12 pt-8 border-t border-gray-700">
                 <h3 class="text-3xl font-bold text-red-500 mb-6 text-center">التعليقات</h3>
                 <div id="disqus_thread" class="bg-gray-900 bg-opacity-70 p-6 rounded-xl"></div>
                 <script>
-                    /**
-                     * متغيرات التكوين الموصى بها لـ Disqus.
-                     * يتم استخدام متغيرات Jekyll لتحديد عنوان URL ومعرف الصفحة وعنوانها تلقائياً.
-                     */
+                
                     var disqus_config = function () {
-                        this.page.url = "{{ site.url }}{{ page.url }}"; // عنوان URL الكامل للمراجعة
-                        this.page.identifier = "{{ page.url }}"; // معرف فريد للمراجعة (يمكن أن يكون مسار الصفحة)
-                        this.page.title = "{{ page.title }}"; // عنوان المراجعة
+                        this.page.url = "{{ site.url }}{{ page.url }}";
+                        this.page.identifier = "{{ page.url }}"; 
+                        this.page.title = "{{ page.title }}"; 
                     };
                     (function() {
                         var d = document, s = d.createElement('script');
-                        // يتم جلب disqus_shortname من ملف _config.yml
+             
                         s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js'; 
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
